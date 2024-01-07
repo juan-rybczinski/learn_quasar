@@ -76,6 +76,18 @@ const essentialLinks = [
     icon: 'school',
     to: '/classes-variables',
   },
+  {
+    title: 'Flex Grid 1',
+    caption: 'quasar.dev',
+    icon: 'school',
+    to: '/flex-grid1',
+  },
+  {
+    title: 'Flex Grid 2',
+    caption: 'quasar.dev',
+    icon: 'school',
+    to: '/flex-grid2',
+  },
 ];
 
 const leftDrawerOpen = ref(false);
