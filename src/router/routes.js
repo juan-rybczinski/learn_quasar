@@ -29,8 +29,22 @@ const routes = [
         component: () => import('pages/FlexGrid1Page.vue'),
       },
       {
-        path: 'flex-grid2',
-        component: () => import('pages/FlexGrid2Page.vue'),
+        path: 'profile',
+        component: () => import('pages/profile/ProfilePage.vue'),
+        children: [
+          {
+            path: '',
+            component: () => import('pages/profile/ProfilePosts.vue'),
+          },
+          {
+            path: 'saved',
+            component: () => import('pages/profile/ProfileSaved.vue'),
+          },
+          {
+            path: 'tagged',
+            component: () => import('pages/profile/ProfileTagged.vue'),
+          },
+        ],
       },
     ],
   },
