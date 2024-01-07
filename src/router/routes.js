@@ -16,6 +16,10 @@ const routes = [
         path: 'spacing',
         component: () => import('pages/SpacingPage.vue'),
       },
+      {
+        path: 'breakpoints',
+        component: () => import('pages/BreakpointsPage.vue'),
+      },
     ],
   },
 
