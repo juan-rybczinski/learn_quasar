@@ -8,6 +8,10 @@ const routes = [
         path: 'typography',
         component: () => import('pages/TypographyPage.vue'),
       },
+      {
+        path: 'colors',
+        component: () => import('pages/ColorsPage.vue'),
+      },
     ],
   },
 
