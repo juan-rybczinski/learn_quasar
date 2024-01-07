@@ -12,6 +12,10 @@ const routes = [
         path: 'colors',
         component: () => import('pages/ColorsPage.vue'),
       },
+      {
+        path: 'spacing',
+        component: () => import('pages/SpacingPage.vue'),
+      },
     ],
   },
 

@@ -52,6 +52,12 @@ const essentialLinks = [
     icon: 'school',
     to: '/colors',
   },
+  {
+    title: 'Spacing',
+    caption: 'quasar.dev',
+    icon: 'school',
+    to: '/spacing',
+  },
 ];
 
 const leftDrawerOpen = ref(false);
