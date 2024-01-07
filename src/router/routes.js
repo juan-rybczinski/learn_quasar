@@ -20,6 +20,10 @@ const routes = [
         path: 'breakpoints',
         component: () => import('pages/BreakpointsPage.vue'),
       },
+      {
+        path: 'classes-variables',
+        component: () => import('pages/ClassesVariablesPage.vue'),
+      },
     ],
   },
 
