@@ -57,6 +57,15 @@ const routes = [
       { path: 'sub-page-2', component: () => import('pages/sub/SubPage2.vue') },
     ],
   },
+  {
+    path: '/auth',
+    component: () => import('layouts/AuthLayout.vue'),
+    children: [
+      { path: '', component: () => import('pages/sub/IndexPage.vue') },
+      { path: 'sign-in', component: () => import('pages/auth/SignInPage.vue') },
+      { path: 'sign-up', component: () => import('pages/auth/SignUpPage.vue') },
+    ],
+  },
   // Always leave this as last one,
   // but you can also remove it
   {
