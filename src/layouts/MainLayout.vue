@@ -99,6 +99,12 @@ const essentialLinks = [
     icon: 'school',
     to: '/flex-grid1',
   },
+  {
+    title: 'Form Handling',
+    caption: 'quasar.dev',
+    icon: 'school',
+    to: '/form-handling',
+  },
 ];
 
 const leftDrawerOpen = ref(false);
