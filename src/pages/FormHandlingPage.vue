@@ -82,6 +82,9 @@
 
 <script setup>
 import { ref } from 'vue';
+import { useQuasar } from 'quasar';
+
+const $q = useQuasar();
 
 const form = ref({
   title: '',
@@ -110,8 +113,18 @@ const validation = () => {
 
 const reset = () => myForm.value.resetValidation();
 
-const onSubmit = () =>
-  form.value.accept !== true ? alert('동의해주세요!') : alert('성공!');
+const onSubmit = () => {
+  if (form.value.accept !== true) {
+    alert('동의해주세요!');
+    return;
+  }
+
+  $q.loading.show();
+  setTimeout(() => {
+    $q.loading.hide();
+    alert('성공!');
+  }, 3000);
+};
 
 const onReset = () => {
   form.value.title = '';
