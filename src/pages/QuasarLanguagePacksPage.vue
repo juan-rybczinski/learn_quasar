@@ -35,15 +35,19 @@ const appLanguages = languages
 <script setup>
 import { LocalStorage, useQuasar } from 'quasar';
 import { ref, watch } from 'vue';
+import { useI18n } from 'vue-i18n';
 
 const $q = useQuasar();
 
 const lang = ref($q.lang.isoName);
 
+const { locale } = useI18n();
+
 watch(lang, val => {
   import('../../node_modules/quasar/lang/' + val).then(lang => {
     LocalStorage.set('lang', val);
     $q.lang.set(lang.default);
+    locale.value = val;
   });
 });
 </script>
