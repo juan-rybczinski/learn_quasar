@@ -33,6 +33,10 @@ const routes = [
         component: () => import('pages/FormHandlingPage.vue'),
       },
       {
+        path: 'quasar-utils',
+        component: () => import('pages/QuasarUtilsPage.vue'),
+      },
+      {
         path: 'profile',
         component: () => import('pages/profile/ProfilePage.vue'),
         children: [

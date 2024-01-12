@@ -105,6 +105,12 @@ const essentialLinks = [
     icon: 'school',
     to: '/form-handling',
   },
+  {
+    title: 'Quasar Utils',
+    caption: 'quasar.dev',
+    icon: 'school',
+    to: '/quasar-utils',
+  },
 ];
 
 const leftDrawerOpen = ref(false);
