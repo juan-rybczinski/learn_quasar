@@ -37,6 +37,10 @@ const routes = [
         component: () => import('pages/QuasarUtilsPage.vue'),
       },
       {
+        path: 'quasar-language-packs',
+        component: () => import('pages/QuasarLanguagePacksPage.vue'),
+      },
+      {
         path: 'profile',
         component: () => import('pages/profile/ProfilePage.vue'),
         children: [
