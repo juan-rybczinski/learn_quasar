@@ -61,6 +61,23 @@
   </q-page>
 </template>
 
-<script setup></script>
+<script>
+const metaData = {
+  title: 'Typography',
+  meta: {
+    description: {
+      name: 'description',
+      content: '짐코딩 Quasar 강의의 Typography에 대한 코드입니다.',
+    },
+    keywords: { name: 'keywords', content: '짐코딩,Quasar,강의,Typography' },
+  },
+};
+</script>
+
+<script setup>
+import { useMeta } from 'quasar';
+
+useMeta(metaData);
+</script>
 
 <style lang="scss" scoped></style>

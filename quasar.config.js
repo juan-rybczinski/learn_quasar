@@ -115,7 +115,7 @@ module.exports = configure(function (/* ctx */) {
       // directives: [],
 
       // Quasar plugins
-      plugins: ['LocalStorage', 'Loading'],
+      plugins: ['LocalStorage', 'Loading', 'LoadingBar', 'Meta'],
     },
 
     // animations: 'all', // --- includes all animations
