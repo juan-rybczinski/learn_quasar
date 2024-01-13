@@ -44,7 +44,7 @@ const lang = ref($q.lang.isoName);
 const { locale } = useI18n();
 
 watch(lang, val => {
-  import('../../node_modules/quasar/lang/' + val).then(lang => {
+  import(`../../node_modules/quasar/lang/${val}.mjs`).then(lang => {
     LocalStorage.set('lang', val);
     $q.lang.set(lang.default);
     locale.value = val;
